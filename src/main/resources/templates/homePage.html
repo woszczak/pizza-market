@@ -1,18 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pizza Market</title>
-    <link rel="stylesheet" th:href="@{/css/fonts.css}">
-    <link rel="stylesheet" th:href="@{css/style.css}">
-</head>
-<body>
-
-<nav th:replace="~{fragments/navigation ::nav}"></nav>
-
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: template(~{:: #home-page-section})}">
 <section id="home-page-section">
     <div class="container">
         <img th:src="@{/img/hero-home.jpg}" alt="Pizza" style="width: 100%; height: 300px; object-fit: cover">
@@ -27,13 +14,11 @@
                 rerum tempora unde, veniam, voluptas? A at explicabo quaerat!</p>
         </div>
 
-        <div  style="display: flex; flex-direction: row; justify-content: center">
+        <div style="display: flex; flex-direction: row; justify-content: center">
             <a class="btn" href="">Sprawdź nasze
                 menu</a>
         </div>
     </div>
 </section>
 
-
-</body>
 </html>
