@@ -10,16 +10,8 @@
     <link rel="stylesheet" th:href="@{css/style.css}">
 </head>
 <body>
-<nav id="page-nav">
-    <div class="container" id="nav-row">
-        <a th:href="@{/}" id="logo" style="">Pizza Market</a>
-        <a href="" class="nav-item">Menu</a>
-        <a href="" class="nav-item">Dostawa</a>
-        <a href="" class="nav-item">Resto</a>
 
-    </div>
-</nav>
-
+<nav th:replace="~{fragments/navigation ::nav}"></nav>
 
 <section id="home-page-section">
     <div class="container">
