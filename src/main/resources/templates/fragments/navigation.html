@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav id="page-nav" th:fragment="nav">
+    <div class="container" id="nav-row">
+        <a th:href="@{/}" id="logo" style="">Pizza Market</a>
+        <a th:href="@{/menu}" class="nav-item">Menu</a>
+        <a href="" class="nav-item">Dostawa</a>
+        <a th:href="@{/opinions}" class="nav-item">Opinie</a>
+        <a href="" class="nav-item">Resto</a>
+    </div>
+</nav>
+
+</body>
+</html>
